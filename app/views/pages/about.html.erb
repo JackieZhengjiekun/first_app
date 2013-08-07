@@ -1,0 +1,16 @@
+<h1>Pages#about</h1>
+<p>Find me in app/views/pages/about.html.erb</p>
+	Time: <%= @time_now %>
+<p>
+	<% if @time_now.hour >12 %> 
+	<strong> Good Afternoon ! </strong>
+	<% else %> Morning !
+	<% end %>
+</p>
+	
+<p>
+	<% 10.times do |random| %>
+	<%= random = @random %>
+	<% end %>
+</p>
+

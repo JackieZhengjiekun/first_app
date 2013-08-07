@@ -1,0 +1,12 @@
+<h1>Welcome</h1>
+<p>Jakcie</p>
+<p>	Time: <%= @time_now %></p>
+<p>Random list: <%= @random_list %></p>
+<p>Sum: <%= @sum %> </p>
+<p><%= text_field "number", "no", "size" => 100 %></p>
+<p>
+	<% if @time_now.hour >12 %> 
+	<strong> Good Afternoon ! </strong>
+	<% else %> Morning !
+	<% end %>
+</p>

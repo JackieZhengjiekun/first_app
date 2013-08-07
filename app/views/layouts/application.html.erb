@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirstApp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<ul>
+	  <li><%= link_to 'home', root_path %></li>
+	  <li><%= link_to 'contact', contact_path %></li>
+	  <li><%= link_to 'about', about_path %></li>
+	   <li><%= link_to 'post', posts_path %></li>
+	    <li><%= link_to 'comment', comments_path %></li>
+	</ul>
+	<p>	
+	Time: <%= Time.now %>
+	</p>
+
+<%= yield %>
+
+</body>
+</html>
