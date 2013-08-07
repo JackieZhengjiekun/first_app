@@ -1,12 +1,14 @@
-<h1>Listing posts</h1>
 
-<table>
+<div class= 'container'>
+<h1 class='logo'>Listing posts</h1>
+
+<table class="table table-bordered">
   <tr>
     <th>Title</th>
     <th>Content</th>
     <th>number of comments</th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
+  
   </tr>
 
 <% @posts.each do |post| %>
@@ -24,4 +26,5 @@
 
 <br />
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'New Post', new_post_path, :class =>"btn btn-embossed btn-primary" %>
+</div>

@@ -7,19 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	<ul>
-	  <li><%= link_to 'home', root_path %></li>
+<div class='container'>
+	<div class ='span8'>
+		
+	<ul class= 'nav nav-pills'>
+	  <li ><%= link_to 'home', root_path %></li>
 	  <li><%= link_to 'contact', contact_path %></li>
 	  <li><%= link_to 'about', about_path %></li>
 	   <li><%= link_to 'post', posts_path %></li>
 	    <li><%= link_to 'comment', comments_path %></li>
 	</ul>
+	
 	<p>	
 	Time: <%= Time.now %>
 	</p>
 
-<%= yield %>
-
+	<%= yield %>
+</div>
+</div>
 </body>
 </html>

@@ -15,10 +15,12 @@
   <%= @post.updated_at %>
 </p>
 
-<table>
+<table class="table table-bordered">
   <h3><%= @post.comments.count %> Comments:</h3>
-  <th></th>
-  <tr>
+ 
+  <th>Text</th>
+  
+
 <% @post.comments.each do |comment| %>
 <tr>
    <td><%= comment.text %></td>
@@ -37,11 +39,11 @@
  </div>
  
   <div class="field">
-    <%= f.label :comment %><br />
-    <%= f.text_field :text %>
+  
+    <%= f.text_field :text ,:placeholder => "Enter Comment" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  :class =>"btn btn-embossed btn-primary" %>
   </div>
 <% end %>
 
