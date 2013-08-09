@@ -1,3 +1,5 @@
+
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <h2>
@@ -18,7 +20,7 @@
 <table class="table table-bordered">
   <h3><%= @post.comments.count %> Comments:</h3>
  
-  <th>Text</th>
+
   
 
 <% @post.comments.each do |comment| %>
@@ -40,7 +42,7 @@
  
   <div class="field">
   
-    <%= f.text_field :text ,:placeholder => "Enter Comment" %>
+    <%= f.text_field :text ,:class => "span6" ,:rows => "3", :placeholder => "Add comment..." %>
   </div>
   <div class="actions">
     <%= f.submit  :class =>"btn btn-embossed btn-primary" %>
@@ -50,3 +52,4 @@
 
 <%= link_to 'Edit This Post', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+</div>

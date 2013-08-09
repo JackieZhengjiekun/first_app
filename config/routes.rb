@@ -8,7 +8,7 @@ FirstApp::Application.routes.draw do
 
  # get "pages/about" 
 
-  #get "pages/contact"
+  get "assets/images"
 
   match 'about' => 'pages#about'
   match 'contact' => 'pages#contact'

@@ -1,9 +1,24 @@
-<h1>zheng jiekun</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
-<p>zhengjiekun@gmail.com </p>
-Random: <%= @random %>
-<% if @random > 500%> 
-<em> > 500 </em>   
-<% else %>
-<em> < 500 </em>
-<% end %>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1 >zheng jiekun</h1>
+		<p>Find me in app/views/pages/contact.html.erb</p>
+		<p>zhengjiekun@gmail.com </p>
+		
+		<div>
+				Random: <%= @random %>
+				<% if @random > 500%> 
+				<em> > 500 </em>   
+				<% else %>
+				<em> < 500 </em>
+				<% end %>
+				<%= image_tag 'rails.png'%>
+			</div>
+		<div>
+			<p id = "try">click me </p>
+			<%= image_tag 'batman.jpg', :id => 'draggable'%>
+		</div>
+	</body>
+	 		
+</html>
